@@ -16,6 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=Inter:wght@300;400;500&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Cormorant+Garamond:wght@300;400&family=Fredoka+One&display=swap" rel="stylesheet">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -622,27 +623,42 @@
           <div class="work-card">
             <div class="work-card-image">
               <svg viewBox="0 0 360 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                <rect width="360" height="225" fill="#1a1a22"/>
-                <rect width="360" height="26" fill="#222230"/>
-                <circle cx="13" cy="13" r="3.5" fill="#38384a"/>
-                <circle cx="23" cy="13" r="3.5" fill="#38384a"/>
-                <circle cx="33" cy="13" r="3.5" fill="#38384a"/>
-                <rect x="46" y="7" width="266" height="12" fill="#28283a" rx="3"/>
-                <rect x="0" y="26" width="360" height="88" fill="#181824"/>
-                <rect x="75" y="50" width="210" height="11" fill="#36364a" rx="2"/>
-                <rect x="105" y="67" width="150" height="7" fill="#2c2c3e" rx="2"/>
-                <rect x="148" y="80" width="64" height="1.5" fill="rgba(212,175,96,0.55)" rx="1"/>
-                <rect x="132" y="88" width="96" height="20" fill="rgba(212,175,96,0.08)" rx="10" stroke="rgba(212,175,96,0.55)" stroke-width="0.8"/>
-                <rect x="148" y="95" width="64" height="6" fill="rgba(212,175,96,0.38)" rx="1.5"/>
-                <rect x="0" y="114" width="360" height="111" fill="#1a1a22"/>
-                <rect x="16" y="126" width="100" height="72" fill="#20202e" rx="4" stroke="#28283a" stroke-width="0.5"/>
-                <rect x="130" y="126" width="100" height="72" fill="#20202e" rx="4" stroke="#28283a" stroke-width="0.5"/>
-                <rect x="244" y="126" width="100" height="72" fill="#20202e" rx="4" stroke="#28283a" stroke-width="0.5"/>
-                <rect x="26" y="140" width="62" height="7" fill="#36364a" rx="1.5"/><rect x="26" y="152" width="78" height="5" fill="#28283a" rx="1.5"/><rect x="26" y="161" width="56" height="5" fill="#242432" rx="1.5"/>
-                <rect x="140" y="140" width="62" height="7" fill="#36364a" rx="1.5"/><rect x="140" y="152" width="78" height="5" fill="#28283a" rx="1.5"/><rect x="140" y="161" width="50" height="5" fill="#242432" rx="1.5"/>
-                <rect x="254" y="140" width="62" height="7" fill="#36364a" rx="1.5"/><rect x="254" y="152" width="78" height="5" fill="#28283a" rx="1.5"/><rect x="254" y="161" width="58" height="5" fill="#242432" rx="1.5"/>
-                <rect x="16" y="206" width="52" height="13" fill="rgba(212,175,96,0.1)" rx="3" stroke="rgba(212,175,96,0.45)" stroke-width="0.5"/>
-                <rect x="22" y="211" width="40" height="3" fill="rgba(212,175,96,0.5)" rx="1"/>
+                <defs>
+                  <radialGradient id="sRg1" cx="60%" cy="30%" r="55%" gradientUnits="objectBoundingBox">
+                    <stop offset="0%" stop-color="#f5c6d0" stop-opacity="0.55"/>
+                    <stop offset="100%" stop-color="#f5c6d0" stop-opacity="0"/>
+                  </radialGradient>
+                  <radialGradient id="sRg2" cx="20%" cy="75%" r="50%" gradientUnits="objectBoundingBox">
+                    <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.18"/>
+                    <stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/>
+                  </radialGradient>
+                  <radialGradient id="sRg3" cx="85%" cy="80%" r="45%" gradientUnits="objectBoundingBox">
+                    <stop offset="0%" stop-color="#f5c6d0" stop-opacity="0.28"/>
+                    <stop offset="100%" stop-color="#f5c6d0" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <!-- background -->
+                <rect width="360" height="225" fill="#faf8f5"/>
+                <rect width="360" height="225" fill="url(#sRg1)"/>
+                <rect width="360" height="225" fill="url(#sRg2)"/>
+                <rect width="360" height="225" fill="url(#sRg3)"/>
+                <!-- decorative arcs -->
+                <circle cx="316" cy="36" r="62" fill="none" stroke="rgba(201,168,76,0.09)" stroke-width="1"/>
+                <circle cx="316" cy="36" r="40" fill="none" stroke="rgba(201,168,76,0.07)" stroke-width="0.6"/>
+                <circle cx="44"  cy="190" r="44" fill="none" stroke="rgba(245,198,208,0.18)" stroke-width="0.8"/>
+                <!-- label -->
+                <text x="180" y="74" font-family="'Cormorant Garamond', Georgia, serif" font-size="9" fill="#c9a84c" text-anchor="middle" letter-spacing="5">PRIVATE SALON · FUKUOKA TENJIN</text>
+                <!-- gold separator -->
+                <line x1="163" y1="82" x2="197" y2="82" stroke="#c9a84c" stroke-width="0.7" opacity="0.6"/>
+                <!-- main title -->
+                <text x="180" y="124" font-family="'Cormorant Garamond', Georgia, serif" font-size="46" fill="#c9a84c" text-anchor="middle" letter-spacing="9" font-weight="300">LUMIÈRE</text>
+                <!-- gold line -->
+                <line x1="148" y1="135" x2="212" y2="135" stroke="#c9a84c" stroke-width="0.8"/>
+                <!-- Japanese subtitle -->
+                <text x="180" y="160" font-family="'Noto Sans JP', sans-serif" font-size="11" fill="#5a5a5a" text-anchor="middle" letter-spacing="1.5">光のような透明感を、あなたの肌へ</text>
+                <!-- small cta hint -->
+                <rect x="147" y="173" width="66" height="18" rx="9" fill="none" stroke="rgba(201,168,76,0.5)" stroke-width="0.7"/>
+                <text x="180" y="185" font-family="Georgia, serif" font-size="8" fill="rgba(201,168,76,0.8)" text-anchor="middle" letter-spacing="2">BOOK NOW</text>
               </svg>
             </div>
             <div class="work-card-body">
@@ -657,26 +673,39 @@
           <div class="work-card">
             <div class="work-card-image">
               <svg viewBox="0 0 360 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                <rect width="360" height="225" fill="#1a1a22"/>
-                <rect width="360" height="26" fill="#222230"/>
-                <circle cx="13" cy="13" r="3.5" fill="#38384a"/><circle cx="23" cy="13" r="3.5" fill="#38384a"/><circle cx="33" cy="13" r="3.5" fill="#38384a"/>
-                <rect x="46" y="7" width="266" height="12" fill="#28283a" rx="3"/>
-                <rect x="0" y="26" width="360" height="72" fill="#141420"/>
-                <rect x="20" y="44" width="180" height="13" fill="#38384a" rx="2"/>
-                <rect x="20" y="63" width="120" height="7" fill="#2c2c3e" rx="2"/>
-                <circle cx="290" cy="56" r="3" fill="#38384a"/><circle cx="302" cy="56" r="3" fill="rgba(74,222,128,0.38)"/><circle cx="314" cy="56" r="3" fill="#38384a"/>
-                <rect x="0" y="98" width="360" height="127" fill="#1a1a22"/>
-                <rect x="16" y="108" width="38" height="12" fill="rgba(74,222,128,0.1)" rx="3" stroke="rgba(74,222,128,0.38)" stroke-width="0.5"/>
-                <rect x="20" y="112" width="30" height="4" fill="rgba(74,222,128,0.52)" rx="1"/>
-                <rect x="16" y="127" width="328" height="1" fill="#28283a"/>
-                <rect x="16" y="137" width="148" height="7" fill="#38384a" rx="1.5"/><rect x="284" y="135" width="60" height="10" fill="#28283a" rx="2"/><rect x="290" y="138" width="48" height="4" fill="#38384a" rx="1"/>
-                <rect x="16" y="149" width="210" height="4" fill="#24243a" rx="1.5"/>
-                <rect x="16" y="160" width="328" height="1" fill="#28283a"/>
-                <rect x="16" y="170" width="128" height="7" fill="#38384a" rx="1.5"/><rect x="284" y="168" width="60" height="10" fill="#28283a" rx="2"/><rect x="290" y="171" width="48" height="4" fill="#38384a" rx="1"/>
-                <rect x="16" y="182" width="186" height="4" fill="#24243a" rx="1.5"/>
-                <rect x="16" y="193" width="328" height="1" fill="#28283a"/>
-                <rect x="16" y="204" width="130" height="18" fill="rgba(74,222,128,0.1)" rx="4" stroke="rgba(74,222,128,0.42)" stroke-width="0.6"/>
-                <rect x="32" y="210" width="98" height="6" fill="rgba(74,222,128,0.52)" rx="1.5"/>
+                <defs>
+                  <radialGradient id="aRg" cx="50%" cy="40%" r="55%" gradientUnits="objectBoundingBox">
+                    <stop offset="0%" stop-color="#c9a460" stop-opacity="0.1"/>
+                    <stop offset="100%" stop-color="#c9a460" stop-opacity="0"/>
+                  </radialGradient>
+                </defs>
+                <!-- background -->
+                <rect width="360" height="225" fill="#080808"/>
+                <rect width="360" height="225" fill="url(#aRg)"/>
+                <!-- subtle horizontal accent lines -->
+                <line x1="0" y1="84" x2="360" y2="84" stroke="rgba(201,164,96,0.05)" stroke-width="0.5"/>
+                <line x1="0" y1="148" x2="360" y2="148" stroke="rgba(201,164,96,0.05)" stroke-width="0.5"/>
+                <!-- corner ornament top-left -->
+                <line x1="24" y1="18" x2="50" y2="18" stroke="rgba(201,164,96,0.3)" stroke-width="0.6"/>
+                <line x1="24" y1="18" x2="24" y2="38" stroke="rgba(201,164,96,0.3)" stroke-width="0.6"/>
+                <!-- corner ornament top-right -->
+                <line x1="336" y1="18" x2="310" y2="18" stroke="rgba(201,164,96,0.3)" stroke-width="0.6"/>
+                <line x1="336" y1="18" x2="336" y2="38" stroke="rgba(201,164,96,0.3)" stroke-width="0.6"/>
+                <!-- pre label with flanking lines -->
+                <line x1="96"  y1="75" x2="126" y2="75" stroke="rgba(201,164,96,0.45)" stroke-width="0.7"/>
+                <text x="180" y="79" font-family="Georgia, serif" font-size="7.5" fill="#c9a460" text-anchor="middle" letter-spacing="5.5">FINE DINING · MINAMI AOYAMA</text>
+                <line x1="234" y1="75" x2="264" y2="75" stroke="rgba(201,164,96,0.45)" stroke-width="0.7"/>
+                <!-- main title -->
+                <text x="180" y="123" font-family="Georgia, 'Times New Roman', serif" font-size="56" fill="#f0ede6" text-anchor="middle" letter-spacing="13" font-weight="400">AURUM</text>
+                <!-- japanese subtitle -->
+                <text x="180" y="145" font-family="'Noto Sans JP', sans-serif" font-size="9.5" fill="rgba(240,237,230,0.38)" text-anchor="middle" letter-spacing="9">オーラム</text>
+                <!-- gold divider -->
+                <line x1="130" y1="155" x2="230" y2="155" stroke="rgba(201,164,96,0.2)" stroke-width="0.6"/>
+                <!-- tagline -->
+                <text x="180" y="175" font-family="Georgia, serif" font-size="11" fill="rgba(201,164,96,0.72)" text-anchor="middle" letter-spacing="2.5" font-style="italic">The Art of Gastronomy</text>
+                <!-- corner ornament bottom-right -->
+                <line x1="336" y1="207" x2="310" y2="207" stroke="rgba(201,164,96,0.3)" stroke-width="0.6"/>
+                <line x1="336" y1="207" x2="336" y2="187" stroke="rgba(201,164,96,0.3)" stroke-width="0.6"/>
               </svg>
             </div>
             <div class="work-card-body">
@@ -690,45 +719,56 @@
           <div class="work-card">
             <div class="work-card-image">
               <svg viewBox="0 0 360 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                <rect width="360" height="225" fill="#fafafa"/>
-                <rect width="360" height="26" fill="#f0f0fe"/>
-                <circle cx="13" cy="13" r="3.5" fill="#ccc"/><circle cx="23" cy="13" r="3.5" fill="#ccc"/><circle cx="33" cy="13" r="3.5" fill="#ccc"/>
-                <rect x="46" y="7" width="266" height="12" fill="#e8e8fa" rx="3"/>
-                <!-- hero area with colorful gradient feel -->
-                <rect x="0" y="26" width="360" height="80" fill="url(#entGrad)"/>
                 <defs>
-                  <linearGradient id="entGrad" x1="0" y1="0" x2="360" y2="80" gradientUnits="userSpaceOnUse">
-                    <stop offset="0%" stop-color="#ffe0f0"/>
-                    <stop offset="50%" stop-color="#e0f8ff"/>
-                    <stop offset="100%" stop-color="#fff8e0"/>
+                  <radialGradient id="plRg1" cx="20%" cy="30%" r="50%" gradientUnits="objectBoundingBox">
+                    <stop offset="0%" stop-color="#ff2d78" stop-opacity="0.2"/>
+                    <stop offset="100%" stop-color="#ff2d78" stop-opacity="0"/>
+                  </radialGradient>
+                  <radialGradient id="plRg2" cx="80%" cy="18%" r="50%" gradientUnits="objectBoundingBox">
+                    <stop offset="0%" stop-color="#00c7ff" stop-opacity="0.2"/>
+                    <stop offset="100%" stop-color="#00c7ff" stop-opacity="0"/>
+                  </radialGradient>
+                  <radialGradient id="plRg3" cx="50%" cy="88%" r="48%" gradientUnits="objectBoundingBox">
+                    <stop offset="0%" stop-color="#8b2fde" stop-opacity="0.18"/>
+                    <stop offset="100%" stop-color="#8b2fde" stop-opacity="0"/>
+                  </radialGradient>
+                  <radialGradient id="plRg4" cx="92%" cy="65%" r="40%" gradientUnits="objectBoundingBox">
+                    <stop offset="0%" stop-color="#f5a000" stop-opacity="0.18"/>
+                    <stop offset="100%" stop-color="#f5a000" stop-opacity="0"/>
+                  </radialGradient>
+                  <linearGradient id="plGr1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%"   stop-color="#ff2d78"/>
+                    <stop offset="50%"  stop-color="#f5a000"/>
+                    <stop offset="100%" stop-color="#009bb5"/>
+                  </linearGradient>
+                  <linearGradient id="plGr2" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%"   stop-color="#009bb5"/>
+                    <stop offset="50%"  stop-color="#8b2fde"/>
+                    <stop offset="100%" stop-color="#ff2d78"/>
                   </linearGradient>
                 </defs>
-                <rect x="80" y="42" width="200" height="12" fill="rgba(255,45,120,0.35)" rx="6"/>
-                <rect x="110" y="60" width="140" height="7" fill="rgba(0,180,230,0.3)" rx="3"/>
-                <rect x="140" y="73" width="80" height="16" fill="rgba(255,45,120,0.9)" rx="8"/>
-                <rect x="148" y="79" width="64" height="4" fill="#fff" rx="2"/>
-                <!-- 4 content cards pop colors -->
-                <rect x="0" y="106" width="360" height="119" fill="#f8f8ff"/>
-                <rect x="12" y="116" width="78" height="58" fill="#fff0f6" rx="6" stroke="rgba(255,45,120,0.3)" stroke-width="1"/>
-                <rect x="98" y="116" width="78" height="58" fill="#f0f8ff" rx="6" stroke="rgba(0,180,230,0.3)" stroke-width="1"/>
-                <rect x="184" y="116" width="78" height="58" fill="#f8f0ff" rx="6" stroke="rgba(150,50,240,0.3)" stroke-width="1"/>
-                <rect x="270" y="116" width="78" height="58" fill="#fffbf0" rx="6" stroke="rgba(255,180,0,0.3)" stroke-width="1"/>
-                <circle cx="51" cy="136" r="10" fill="rgba(255,45,120,0.18)"/>
-                <rect x="43" y="134" width="16" height="2" fill="rgba(255,45,120,0.8)" rx="1"/><rect x="50" y="127" width="2" height="18" fill="rgba(255,45,120,0.8)" rx="1"/>
-                <circle cx="137" cy="136" r="10" fill="rgba(0,180,230,0.18)"/>
-                <rect x="131" y="133" width="12" height="6" fill="rgba(0,180,230,0.7)" rx="2"/>
-                <circle cx="223" cy="136" r="10" fill="rgba(150,50,240,0.18)"/>
-                <rect x="217" y="130" width="12" height="12" fill="rgba(150,50,240,0.6)" rx="3"/>
-                <circle cx="309" cy="136" r="10" fill="rgba(255,180,0,0.18)"/>
-                <polygon points="309,128 315,140 303,140" fill="rgba(255,180,0,0.8)"/>
-                <rect x="22" y="150" width="58" height="4" fill="rgba(255,45,120,0.35)" rx="2"/>
-                <rect x="108" y="150" width="58" height="4" fill="rgba(0,180,230,0.35)" rx="2"/>
-                <rect x="194" y="150" width="58" height="4" fill="rgba(150,50,240,0.35)" rx="2"/>
-                <rect x="280" y="150" width="58" height="4" fill="rgba(255,180,0,0.35)" rx="2"/>
-                <rect x="22" y="158" width="42" height="3" fill="rgba(0,0,0,0.1)" rx="1.5"/>
-                <rect x="108" y="158" width="42" height="3" fill="rgba(0,0,0,0.1)" rx="1.5"/>
-                <rect x="194" y="158" width="42" height="3" fill="rgba(0,0,0,0.1)" rx="1.5"/>
-                <rect x="280" y="158" width="42" height="3" fill="rgba(0,0,0,0.1)" rx="1.5"/>
+                <!-- background -->
+                <rect width="360" height="225" fill="#fff8ff"/>
+                <rect width="360" height="225" fill="url(#plRg1)"/>
+                <rect width="360" height="225" fill="url(#plRg2)"/>
+                <rect width="360" height="225" fill="url(#plRg3)"/>
+                <rect width="360" height="225" fill="url(#plRg4)"/>
+                <!-- floating shapes -->
+                <circle cx="38"  cy="52"  r="16" fill="rgba(255,45,120,0.14)"/>
+                <circle cx="38"  cy="52"  r="9"  fill="rgba(255,45,120,0.1)"/>
+                <rect   x="302" y="18"   width="26" height="26" rx="5" fill="rgba(0,155,181,0.13)" transform="rotate(18,315,31)"/>
+                <polygon points="328,172 344,200 312,200" fill="rgba(245,160,0,0.18)"/>
+                <circle cx="54"  cy="178" r="20" fill="none" stroke="rgba(139,47,222,0.22)" stroke-width="2.5"/>
+                <circle cx="330" cy="72"  r="11" fill="rgba(255,45,120,0.12)"/>
+                <!-- badge -->
+                <rect x="130" y="16" width="100" height="18" rx="9" fill="rgba(245,160,0,0.15)" stroke="rgba(245,160,0,0.6)" stroke-width="1"/>
+                <text x="180" y="28.5" font-family="'Noto Sans JP', sans-serif" font-size="8" fill="#c88000" text-anchor="middle" letter-spacing="1.5">🎯 大阪最大級エンタメ施設</text>
+                <!-- title line 1 -->
+                <text x="180" y="98" font-family="'Fredoka One', 'Arial Rounded MT Bold', Arial, sans-serif" font-size="48" fill="url(#plGr1)" text-anchor="middle" font-weight="700" letter-spacing="1">PLAYLAND</text>
+                <!-- title line 2 -->
+                <text x="180" y="147" font-family="'Fredoka One', 'Arial Rounded MT Bold', Arial, sans-serif" font-size="54" fill="url(#plGr2)" text-anchor="middle" font-weight="700" letter-spacing="2">MAX</text>
+                <!-- subtitle -->
+                <text x="180" y="178" font-family="'Noto Sans JP', sans-serif" font-size="11" fill="#111122" text-anchor="middle" letter-spacing="1" opacity="0.85">あそびの宇宙、ぜんぶここにある。</text>
               </svg>
             </div>
             <div class="work-card-body">
@@ -742,34 +782,68 @@
           <div class="work-card">
             <div class="work-card-image">
               <svg viewBox="0 0 360 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-                <rect width="360" height="225" fill="#050505"/>
-                <rect width="360" height="26" fill="#0a0505"/>
-                <circle cx="13" cy="13" r="3.5" fill="#2a1010"/><circle cx="23" cy="13" r="3.5" fill="#2a1010"/><circle cx="33" cy="13" r="3.5" fill="#2a1010"/>
-                <rect x="46" y="7" width="266" height="12" fill="#1a0808" rx="3"/>
-                <text x="50" y="17" font-family="serif" font-size="8" fill="rgba(200,150,12,0.7)" letter-spacing="4">UMBRA</text>
-                <!-- hex decoration -->
-                <polygon points="180,38 210,55 210,89 180,106 150,89 150,55" fill="none" stroke="rgba(139,0,0,0.25)" stroke-width="1"/>
-                <polygon points="180,50 198,60 198,80 180,90 162,80 162,60" fill="none" stroke="rgba(139,0,0,0.15)" stroke-width="0.5"/>
-                <!-- hero title block -->
-                <rect x="100" y="64" width="160" height="18" fill="rgba(224,216,204,0.08)" rx="2"/>
-                <rect x="120" y="69" width="120" height="8" fill="rgba(224,216,204,0.4)" rx="1.5"/>
-                <rect x="135" y="86" width="90" height="5" fill="rgba(139,0,0,0.4)" rx="1"/>
-                <rect x="152" y="96" width="56" height="14" fill="none" stroke="rgba(139,0,0,0.5)" stroke-width="0.8" rx="1"/>
-                <rect x="158" y="101" width="44" height="4" fill="rgba(224,216,204,0.5)" rx="1"/>
-                <!-- works grid -->
-                <rect x="0" y="114" width="360" height="111" fill="#030303"/>
-                <rect x="16" y="124" width="152" height="48" fill="rgba(255,255,255,0.015)" stroke="rgba(139,0,0,0.2)" stroke-width="0.8"/>
-                <rect x="192" y="124" width="152" height="48" fill="rgba(255,255,255,0.015)" stroke="rgba(139,0,0,0.2)" stroke-width="0.8"/>
-                <rect x="16" y="177" width="70" height="2" fill="linear-gradient(90deg,transparent,rgba(204,34,0,0.6),transparent)"/>
-                <rect x="16" y="130" width="60" height="5" fill="rgba(224,216,204,0.25)" rx="1"/>
-                <rect x="16" y="140" width="110" height="3" fill="rgba(100,96,96,0.3)" rx="1"/>
-                <rect x="16" y="148" width="90" height="3" fill="rgba(100,96,96,0.2)" rx="1"/>
-                <rect x="192" y="130" width="60" height="5" fill="rgba(224,216,204,0.25)" rx="1"/>
-                <rect x="192" y="140" width="110" height="3" fill="rgba(100,96,96,0.3)" rx="1"/>
-                <rect x="192" y="148" width="90" height="3" fill="rgba(100,96,96,0.2)" rx="1"/>
-                <rect x="16" y="177" width="328" height="1" fill="rgba(139,0,0,0.15)"/>
-                <rect x="16" y="183" width="60" height="5" fill="rgba(224,216,204,0.15)" rx="1"/>
-                <rect x="80" y="183" width="40" height="5" fill="rgba(139,0,0,0.2)" rx="1"/>
+                <defs>
+                  <radialGradient id="uRg" cx="50%" cy="50%" r="55%" gradientUnits="objectBoundingBox">
+                    <stop offset="0%" stop-color="#8b0000" stop-opacity="0.18"/>
+                    <stop offset="100%" stop-color="#8b0000" stop-opacity="0"/>
+                  </radialGradient>
+                  <filter id="uGlow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                </defs>
+                <!-- pure black background -->
+                <rect width="360" height="225" fill="#000000"/>
+                <!-- red ambient glow -->
+                <rect width="360" height="225" fill="url(#uRg)"/>
+
+                <!-- ICOSAHEDRON WIREFRAME -->
+                <!-- Vertices (orthographic projection, Y-rot 30°, X-rot 20°, scale=45, center 180,115):
+                     V0(216.4,94.3) V1(216.4,178.9) V2(143.6,51.1)  V3(143.6,135.7)
+                     V4(219.0,38.9) V5(141.0,54.2)  V6(219.0,175.8) V7(141.0,191.1)
+                     V8(265.5,115.9) V9(139.5,140.8) V10(220.5,89.2) V11(94.5,114.1) -->
+
+                <!-- back edges — low opacity -->
+                <g stroke="rgba(139,0,0,0.28)" stroke-width="0.7" fill="none">
+                  <line x1="216.4" y1="178.9" x2="219.0" y2="175.8"/><!-- V1-V6 -->
+                  <line x1="143.6" y1="51.1"  x2="143.6" y2="135.7"/><!-- V2-V3 -->
+                  <line x1="143.6" y1="51.1"  x2="219.0" y2="38.9"/> <!-- V2-V4 -->
+                  <line x1="143.6" y1="51.1"  x2="220.5" y2="89.2"/> <!-- V2-V10 -->
+                  <line x1="143.6" y1="51.1"  x2="94.5"  y2="114.1"/><!-- V2-V11 -->
+                  <line x1="143.6" y1="135.7" x2="219.0" y2="175.8"/><!-- V3-V6 -->
+                  <line x1="143.6" y1="135.7" x2="141.0" y2="191.1"/><!-- V3-V7 -->
+                  <line x1="143.6" y1="135.7" x2="220.5" y2="89.2"/> <!-- V3-V10 -->
+                  <line x1="143.6" y1="135.7" x2="94.5"  y2="114.1"/><!-- V3-V11 -->
+                  <line x1="219.0" y1="38.9"  x2="220.5" y2="89.2"/> <!-- V4-V10 -->
+                  <line x1="219.0" y1="175.8" x2="141.0" y2="191.1"/><!-- V6-V7 -->
+                  <line x1="219.0" y1="175.8" x2="265.5" y2="115.9"/><!-- V6-V8 -->
+                  <line x1="219.0" y1="175.8" x2="220.5" y2="89.2"/> <!-- V6-V10 -->
+                  <line x1="141.0" y1="191.1" x2="94.5"  y2="114.1"/><!-- V7-V11 -->
+                  <line x1="265.5" y1="115.9" x2="220.5" y2="89.2"/> <!-- V8-V10 -->
+                </g>
+
+                <!-- front edges — high opacity + glow -->
+                <g stroke="rgba(204,34,0,0.78)" stroke-width="0.85" fill="none" filter="url(#uGlow)">
+                  <line x1="216.4" y1="94.3"  x2="216.4" y2="178.9"/><!-- V0-V1 -->
+                  <line x1="216.4" y1="94.3"  x2="219.0" y2="38.9"/> <!-- V0-V4 -->
+                  <line x1="216.4" y1="94.3"  x2="141.0" y2="54.2"/> <!-- V0-V5 -->
+                  <line x1="216.4" y1="94.3"  x2="265.5" y2="115.9"/><!-- V0-V8 -->
+                  <line x1="216.4" y1="94.3"  x2="139.5" y2="140.8"/><!-- V0-V9 -->
+                  <line x1="216.4" y1="178.9" x2="141.0" y2="191.1"/><!-- V1-V7 -->
+                  <line x1="216.4" y1="178.9" x2="265.5" y2="115.9"/><!-- V1-V8 -->
+                  <line x1="216.4" y1="178.9" x2="139.5" y2="140.8"/><!-- V1-V9 -->
+                  <line x1="143.6" y1="51.1"  x2="141.0" y2="54.2"/> <!-- V2-V5 -->
+                  <line x1="219.0" y1="38.9"  x2="141.0" y2="54.2"/> <!-- V4-V5 -->
+                  <line x1="219.0" y1="38.9"  x2="265.5" y2="115.9"/><!-- V4-V8 -->
+                  <line x1="141.0" y1="54.2"  x2="139.5" y2="140.8"/><!-- V5-V9 -->
+                  <line x1="141.0" y1="54.2"  x2="94.5"  y2="114.1"/><!-- V5-V11 -->
+                  <line x1="141.0" y1="191.1" x2="139.5" y2="140.8"/><!-- V7-V9 -->
+                  <line x1="139.5" y1="140.8" x2="94.5"  y2="114.1"/><!-- V9-V11 -->
+                </g>
+
+                <!-- text overlaid on icosahedron -->
+                <text x="180" y="124" font-family="'Cinzel', Georgia, serif" font-size="58" fill="#e0d8cc" text-anchor="middle" letter-spacing="14" font-weight="900" opacity="0.95">UMBRA</text>
+                <text x="180" y="152" font-family="'Noto Sans JP', sans-serif" font-size="11" fill="rgba(139,0,0,0.95)" text-anchor="middle" letter-spacing="5">闇を設計する。</text>
               </svg>
             </div>
             <div class="work-card-body">
