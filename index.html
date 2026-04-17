@@ -312,7 +312,6 @@
       display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
       margin: 40px 0 72px;
     }
-    .system-talk-left { }
     .system-talk-heading {
       font-size: 40px; font-weight: 300; color: var(--text); line-height: 1.2;
       letter-spacing: -0.02em; margin-bottom: 24px;
@@ -426,6 +425,7 @@
     .work-card-sub { font-size: 13px; color: var(--text-sub); margin-top: 7px; line-height: 1.75; }
     .work-card-link { display: inline-block; font-size: 13px; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; margin-top: 14px; transition: opacity 0.2s; }
     .work-card-link:hover { opacity: 0.7; }
+    .work-card-badge--dark { color: #8b0000; }
 
     /* Instagram Works */
     .works-instagram {
@@ -494,7 +494,6 @@
 
     /* Anxiety-relief list for AI導入設計 */
     .service-qa { margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
-    .service-qa-item { }
     .service-qa-q { font-size: 12px; color: var(--text-faint); font-family: var(--font-mono); margin-bottom: 2px; }
     .service-qa-a { font-size: 13px; color: var(--text-sub); line-height: 1.7; }
 
@@ -645,6 +644,7 @@
       #results { padding: 72px 5% 56px; }
       .results-metrics { grid-template-columns: repeat(2, 1fr); }
       .result-cell { border-right: none; border-bottom: 1px solid var(--border); }
+      .result-cell:last-child { border-bottom: none; }
       .result-number { font-size: 28px; }
       .comparison-table { font-size: 13px; }
       .comparison-table thead th, .comparison-table tbody td { padding: 10px 12px; }
@@ -1216,7 +1216,7 @@
               </svg>
             </div>
             <div class="work-card-body">
-              <div class="work-card-badge" style="color:#8b0000; border-color:rgba(139,0,0,0.3);">Dark Creative</div>
+              <div class="work-card-badge work-card-badge--dark">Dark Creative</div>
               <div class="work-card-title">ダークファンタジー</div>
               <div class="work-card-sub">デモ LP &mdash; 漆黒×深紅の世界観、パーティクル・グリッチ演出。デジタルクリエイティブ向け圧倒的インパクト設計。</div>
               <a href="https://iniyoshi-demo-darkfantasy.netlify.app" target="_blank" rel="noopener" class="work-card-link">サイトを見る &rarr;</a>
