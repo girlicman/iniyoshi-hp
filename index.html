@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>INIYOSHI AI WORKS — AI Production Studio</title>
-  <meta name="description" content="8つのAIチームで回すAI制作スタジオ。LP制作、Instagram自動運用、AI業務導入。話すだけでAIが動く。">
+  <meta name="description" content="あなたのSNS投稿作業を60分→5分に。LP制作10万円〜、Instagram自動運用 月額3万円〜。20以上のAIエージェントが集客を自動化。">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="INIYOSHI AI WORKS">
-  <meta property="og:description" content="話すだけでAIが動く。LP制作・Instagram自動運用・業務自動化。">
+  <meta property="og:title" content="INIYOSHI AI WORKS — あなたの集客をAIが回す">
+  <meta property="og:description" content="投稿作業60分→5分。LP制作・Instagram自動運用・業務自動化。話すだけでAIチームが動く。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="INIYOSHI AI WORKS">
-  <meta name="twitter:description" content="話すだけでAIが動く制作スタジオ。非エンジニアが20以上のAIエージェントを指揮する。">
+  <meta name="twitter:title" content="INIYOSHI AI WORKS — あなたの集客をAIが回す">
+  <meta name="twitter:description" content="投稿作業60分→5分。LP制作10万円〜。話すだけでAIチームが動く制作スタジオ。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=Inter:wght@300;400;500&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
@@ -216,78 +216,91 @@
     @keyframes slide-in-x { from { opacity:0; transform:translateX(8px); } to { opacity:1; transform:translateX(0); } }
     @keyframes fade-up { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:translateY(0); } }
 
-    /* ===== Works (SEC-2) ===== */
-    #works { padding: 120px 5%; background: var(--bg); }
-    .works-inner { max-width: var(--max-width); margin: 0 auto; }
-    .works-inner .section-label { display: block; margin-bottom: 14px; }
-    .works-heading { font-size: 32px; font-weight: 300; color: var(--text); margin-bottom: 48px; letter-spacing: -0.01em; line-height: 1.3; }
-    .works-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-    .work-card {
-      border: 1px solid var(--border); border-radius: var(--radius);
-      overflow: hidden; transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
-      background: var(--bg-card);
-    }
-    .work-card:hover {
-      border-color: var(--accent-border);
-      box-shadow: 0 0 32px rgba(74,222,128,0.07), 0 8px 24px rgba(0,0,0,0.3);
-      transform: translateY(-2px);
-    }
-    .work-card-image { aspect-ratio: 16/10; overflow: hidden; }
-    .work-card-image svg { width: 100%; height: 100%; display: block; }
-    .work-card-body { padding: 22px; }
-    .work-card-badge { font-family: var(--font-en); font-size: 11px; font-weight: 500; color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; }
-    .work-card-title { font-size: 16px; font-weight: 400; color: var(--text); }
-    .work-card-sub { font-size: 13px; color: var(--text-sub); margin-top: 7px; line-height: 1.75; }
-    .work-card-link { display: inline-block; font-size: 13px; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; margin-top: 14px; transition: opacity 0.2s; }
-    .work-card-link:hover { opacity: 0.7; }
-
-    /* Instagram Works */
-    .works-instagram {
-      margin-top: 32px; border: 1px solid var(--border); border-radius: var(--radius);
-      padding: 36px; background: var(--bg-card); transition: border-color 0.25s;
-    }
-    .works-instagram:hover { border-color: var(--accent-border); }
-    .insta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
-    .insta-left-title { font-size: 20px; font-weight: 400; color: var(--text); }
-    .insta-left-sub { font-size: 14px; color: var(--text-sub); margin-top: 4px; }
-    .insta-flow { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-    .flow-step { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 7px; padding: 9px 12px; }
-    .flow-step-num { font-family: var(--font-mono); font-size: 10px; color: var(--accent); letter-spacing: 0.05em; }
-    .flow-step-name { font-size: 12px; color: var(--text); margin-top: 3px; white-space: nowrap; }
-    .flow-arrow { font-size: 14px; color: var(--text-faint); flex-shrink: 0; }
-    .insta-flow-desc { font-size: 12px; color: var(--text-faint); margin-top: 16px; line-height: 1.7; }
-    .insta-big-number { font-size: 52px; font-weight: 300; color: var(--accent); line-height: 1; font-family: var(--font-en); }
-    .insta-big-label { font-size: 13px; color: var(--text-sub); margin-top: 6px; }
-    .insta-stats { margin-top: 24px; }
-    .insta-stat { display: flex; justify-content: space-between; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--border); }
-    .insta-stat:first-child { border-top: 1px solid var(--border); }
-    .insta-stat-label { font-size: 13px; color: var(--text-sub); }
-    .insta-stat-value { font-size: 13px; font-weight: 400; color: var(--text); font-family: var(--font-mono); }
-    .works-footnote { font-size: 13px; color: var(--text-faint); margin-top: 36px; line-height: 1.8; }
-
-    /* ===== Evidence Strip (SEC-3) ===== */
-    #evidence {
+    /* ===== Results (SEC-2) ===== */
+    #results {
+      padding: 100px 5% 80px;
       background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg) 100%);
-      padding: 72px 5%;
       border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
     }
-    .evidence-inner {
-      max-width: var(--max-width); margin: 0 auto;
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 0;
+    .results-inner { max-width: var(--max-width); margin: 0 auto; }
+    .results-inner .section-label { display: block; margin-bottom: 14px; }
+    .results-heading {
+      font-size: 28px; font-weight: 300; color: var(--text);
+      line-height: 1.4; letter-spacing: -0.01em; margin-bottom: 48px;
     }
-    .evidence-cell {
-      text-align: center;
-      padding: 20px 16px;
+    .results-metrics {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+      margin-bottom: 56px;
+    }
+    .result-cell {
+      text-align: center; padding: 24px 16px;
       border-right: 1px solid var(--border);
     }
-    .evidence-cell:last-child { border-right: none; }
-    .evidence-icon { margin: 0 auto 12px; color: var(--accent); display: flex; justify-content: center; }
-    .evidence-number { font-size: 32px; font-weight: 400; color: var(--accent); line-height: 1.1; font-family: var(--font-en); letter-spacing: -0.02em; }
-    .evidence-desc { font-size: 13px; color: var(--text-sub); margin-top: 6px; line-height: 1.6; }
+    .result-cell:last-child { border-right: none; }
+    .result-icon { margin: 0 auto 12px; color: var(--accent); display: flex; justify-content: center; }
+    .result-number {
+      font-size: 36px; font-weight: 400; color: var(--accent);
+      line-height: 1.1; font-family: var(--font-en); letter-spacing: -0.02em;
+    }
+    .result-desc { font-size: 13px; color: var(--text-sub); margin-top: 8px; line-height: 1.6; }
+    .result-note { font-size: 11px; color: var(--text-faint); margin-top: 4px; }
 
-    /* ===== System (SEC-4) ===== */
+    /* Comparison table */
+    .comparison-wrap { margin-top: 16px; }
+    .comparison-title {
+      font-size: 18px; font-weight: 400; color: var(--text); margin-bottom: 20px;
+    }
+    .comparison-table {
+      width: 100%; border-collapse: collapse;
+      border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+    }
+    .comparison-table thead th {
+      background: var(--bg-terminal); padding: 14px 20px;
+      font-family: var(--font-mono); font-size: 12px; font-weight: 400;
+      color: var(--text-sub); letter-spacing: 0.04em; text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .comparison-table thead th:first-child { color: var(--text-faint); }
+    .comparison-table thead th:last-child { color: var(--accent); }
+    .comparison-table tbody td {
+      padding: 13px 20px; font-size: 14px; color: var(--text-sub);
+      border-bottom: 1px solid var(--border);
+    }
+    .comparison-table tbody tr:last-child td { border-bottom: none; }
+    .comparison-table tbody td:first-child {
+      font-size: 13px; color: var(--text-faint); font-family: var(--font-mono);
+      letter-spacing: 0.02em;
+    }
+    .comparison-table tbody td:last-child { color: var(--text); font-weight: 400; }
+    .comparison-note {
+      font-size: 13px; color: var(--text-faint); margin-top: 20px; line-height: 1.8;
+    }
+
+    /* ===== Mid CTA ===== */
+    .mid-cta-section {
+      padding: 56px 5%;
+      background: var(--bg);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      text-align: center;
+    }
+    .mid-cta-text {
+      font-size: 20px; font-weight: 300; color: var(--text); margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .mid-cta-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 13px 32px;
+      background: var(--accent); color: #0c0c0c;
+      border-radius: 6px; font-size: 14px; font-weight: 400;
+      transition: opacity 0.2s, box-shadow 0.2s;
+    }
+    .mid-cta-btn:hover { opacity: 0.88; box-shadow: 0 0 20px rgba(74,222,128,0.3); }
+    .mid-cta-sub {
+      font-size: 13px; color: var(--text-faint); margin-top: 12px;
+    }
+
+    /* ===== AI Team (SEC-3) ===== */
     #system {
       padding: 120px 5%;
       background:
@@ -349,6 +362,25 @@
       margin-top: 16px; line-height: 1.4; letter-spacing: -0.01em; margin-bottom: 40px;
     }
 
+    /* Team personality cards */
+    .team-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 48px; }
+    .team-card {
+      border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 24px 20px; background: var(--bg-card);
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+    .team-card:hover {
+      border-color: var(--accent-border);
+      box-shadow: 0 0 24px rgba(74,222,128,0.06);
+    }
+    .team-card-icon { color: var(--accent); margin-bottom: 14px; display: block; }
+    .team-card-name { font-size: 16px; font-weight: 400; color: var(--text); }
+    .team-card-role {
+      font-family: var(--font-mono); font-size: 11px; color: var(--accent);
+      letter-spacing: 0.06em; margin-top: 2px;
+    }
+    .team-card-desc { font-size: 13px; color: var(--text-sub); margin-top: 12px; line-height: 1.75; }
+
     .system-diagram-label { font-size: 13px; color: var(--text-faint); margin-bottom: 20px; }
     .system-svg-wrap { overflow-x: auto; padding: 4px 0 8px; }
     .system-svg-wrap svg { display: block; max-width: 100%; min-width: 500px; }
@@ -369,6 +401,55 @@
       color: var(--accent);
     }
     .system-note { font-size: 13px; color: var(--text-faint); margin-top: 40px; line-height: 1.8; }
+
+    /* ===== Works (SEC-4) ===== */
+    #works { padding: 120px 5%; background: var(--bg); }
+    .works-inner { max-width: var(--max-width); margin: 0 auto; }
+    .works-inner .section-label { display: block; margin-bottom: 14px; }
+    .works-heading { font-size: 32px; font-weight: 300; color: var(--text); margin-bottom: 48px; letter-spacing: -0.01em; line-height: 1.3; }
+    .works-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .work-card {
+      border: 1px solid var(--border); border-radius: var(--radius);
+      overflow: hidden; transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+      background: var(--bg-card);
+    }
+    .work-card:hover {
+      border-color: var(--accent-border);
+      box-shadow: 0 0 32px rgba(74,222,128,0.07), 0 8px 24px rgba(0,0,0,0.3);
+      transform: translateY(-2px);
+    }
+    .work-card-image { aspect-ratio: 16/10; overflow: hidden; }
+    .work-card-image svg { width: 100%; height: 100%; display: block; }
+    .work-card-body { padding: 22px; }
+    .work-card-badge { font-family: var(--font-en); font-size: 11px; font-weight: 500; color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; }
+    .work-card-title { font-size: 16px; font-weight: 400; color: var(--text); }
+    .work-card-sub { font-size: 13px; color: var(--text-sub); margin-top: 7px; line-height: 1.75; }
+    .work-card-link { display: inline-block; font-size: 13px; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; margin-top: 14px; transition: opacity 0.2s; }
+    .work-card-link:hover { opacity: 0.7; }
+
+    /* Instagram Works */
+    .works-instagram {
+      margin-top: 32px; border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 36px; background: var(--bg-card); transition: border-color 0.25s;
+    }
+    .works-instagram:hover { border-color: var(--accent-border); }
+    .insta-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+    .insta-left-title { font-size: 20px; font-weight: 400; color: var(--text); }
+    .insta-left-sub { font-size: 14px; color: var(--text-sub); margin-top: 4px; }
+    .insta-flow { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .flow-step { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 7px; padding: 9px 12px; }
+    .flow-step-num { font-family: var(--font-mono); font-size: 10px; color: var(--accent); letter-spacing: 0.05em; }
+    .flow-step-name { font-size: 12px; color: var(--text); margin-top: 3px; white-space: nowrap; }
+    .flow-arrow { font-size: 14px; color: var(--text-faint); flex-shrink: 0; }
+    .insta-flow-desc { font-size: 12px; color: var(--text-faint); margin-top: 16px; line-height: 1.7; }
+    .insta-big-number { font-size: 52px; font-weight: 300; color: var(--accent); line-height: 1; font-family: var(--font-en); }
+    .insta-big-label { font-size: 13px; color: var(--text-sub); margin-top: 6px; }
+    .insta-stats { margin-top: 24px; }
+    .insta-stat { display: flex; justify-content: space-between; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--border); }
+    .insta-stat:first-child { border-top: 1px solid var(--border); }
+    .insta-stat-label { font-size: 13px; color: var(--text-sub); }
+    .insta-stat-value { font-size: 13px; font-weight: 400; color: var(--text); font-family: var(--font-mono); }
+    .works-footnote { font-size: 13px; color: var(--text-faint); margin-top: 36px; line-height: 1.8; }
 
     /* ===== Services (SEC-5) ===== */
     #services {
@@ -394,7 +475,8 @@
     }
     .service-icon { color: var(--accent); margin-bottom: 18px; display: block; }
     .service-title { font-size: 20px; font-weight: 400; color: var(--text); }
-    .service-price { font-size: 13px; color: var(--text-faint); margin-top: 4px; }
+    .service-price { font-size: 14px; color: var(--accent); margin-top: 6px; font-weight: 400; }
+    .service-price-note { font-size: 12px; color: var(--text-faint); margin-top: 2px; }
     .service-card-body { padding: 20px 28px 28px; }
     .service-desc { font-size: 14px; color: var(--text-sub); line-height: 1.85; }
     .service-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
@@ -403,30 +485,18 @@
       background: rgba(255,255,255,0.04); border: 1px solid var(--border);
       border-radius: 4px; color: var(--text-sub);
     }
+    .service-includes { margin-top: 16px; }
+    .service-includes-item {
+      display: flex; align-items: baseline; gap: 8px;
+      font-size: 13px; color: var(--text-sub); line-height: 1.8;
+    }
+    .service-includes-icon { color: var(--accent); flex-shrink: 0; font-family: var(--font-mono); font-size: 11px; }
 
     /* Anxiety-relief list for AI導入設計 */
     .service-qa { margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
     .service-qa-item { }
     .service-qa-q { font-size: 12px; color: var(--text-faint); font-family: var(--font-mono); margin-bottom: 2px; }
     .service-qa-a { font-size: 13px; color: var(--text-sub); line-height: 1.7; }
-
-    /* Security */
-    .security-block { margin-top: 56px; }
-    .security-heading { font-size: 16px; font-weight: 400; color: var(--text); margin-bottom: 20px; }
-    .security-content {
-      border: 1px solid var(--border); border-radius: var(--radius);
-      padding: 32px; background: var(--bg-card); transition: border-color 0.25s;
-    }
-    .security-content:hover { border-color: var(--accent-border); }
-    .security-intro { font-size: 14px; color: var(--text-sub); margin-bottom: 20px; line-height: 1.8; }
-    .security-tools { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px; }
-    .security-tool-card {
-      background: rgba(255,255,255,0.03); border: 1px solid var(--border);
-      border-radius: 7px; padding: 14px;
-    }
-    .security-tool-name { font-family: var(--font-mono); font-size: 12px; color: var(--text); margin-bottom: 4px; }
-    .security-tool-desc { font-size: 12px; color: var(--text-faint); line-height: 1.5; }
-    .security-foot { font-size: 14px; color: var(--text-sub); line-height: 1.8; }
 
     /* ===== Process (SEC-6) ===== */
     #process { padding: 120px 5%; background: var(--bg); }
@@ -449,7 +519,32 @@
     .process-title { font-size: 16px; font-weight: 400; color: var(--text); padding-top: 10px; }
     .process-desc { font-size: 14px; color: var(--text-sub); margin-top: 4px; line-height: 1.85; }
 
-    /* ===== About (SEC-7) ===== */
+    /* ===== FAQ (SEC-7) ===== */
+    #faq {
+      padding: 120px 5%;
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg-alt) 100%);
+    }
+    .faq-inner { max-width: 720px; margin: 0 auto; }
+    .faq-inner .section-label { display: block; margin-bottom: 14px; }
+    .faq-list { margin-top: 8px; }
+    .faq-item {
+      border-bottom: 1px solid var(--border); padding: 28px 0;
+    }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+    .faq-question {
+      font-size: 16px; font-weight: 400; color: var(--text); line-height: 1.5;
+      display: flex; align-items: baseline; gap: 12px;
+    }
+    .faq-q-mark {
+      font-family: var(--font-mono); font-size: 14px; color: var(--accent);
+      flex-shrink: 0; font-weight: 400;
+    }
+    .faq-answer {
+      font-size: 14px; color: var(--text-sub); line-height: 1.85;
+      margin-top: 12px; padding-left: 32px;
+    }
+
+    /* ===== About (SEC-8) ===== */
     #about {
       background: linear-gradient(180deg, var(--bg-alt) 0%, var(--bg) 100%);
       padding: 120px 5%;
@@ -468,8 +563,31 @@
       border: 1px solid var(--border); border-radius: 7px;
     }
 
-    /* ===== Contact (SEC-8) ===== */
-    #contact { padding: 120px 5%; background: var(--bg); }
+    /* ===== Security (SEC-9) ===== */
+    #security {
+      padding: 100px 5%;
+      background: var(--bg);
+    }
+    .security-inner { max-width: var(--max-width); margin: 0 auto; }
+    .security-inner .section-label { display: block; margin-bottom: 14px; }
+    .security-heading { font-size: 28px; font-weight: 300; color: var(--text); margin-bottom: 32px; line-height: 1.4; }
+    .security-content {
+      border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 32px; background: var(--bg-card); transition: border-color 0.25s;
+    }
+    .security-content:hover { border-color: var(--accent-border); }
+    .security-intro { font-size: 14px; color: var(--text-sub); margin-bottom: 20px; line-height: 1.8; }
+    .security-tools { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px; }
+    .security-tool-card {
+      background: rgba(255,255,255,0.03); border: 1px solid var(--border);
+      border-radius: 7px; padding: 14px;
+    }
+    .security-tool-name { font-family: var(--font-mono); font-size: 12px; color: var(--text); margin-bottom: 4px; }
+    .security-tool-desc { font-size: 12px; color: var(--text-faint); line-height: 1.5; }
+    .security-foot { font-size: 14px; color: var(--text-sub); line-height: 1.8; }
+
+    /* ===== Contact (SEC-10) ===== */
+    #contact { padding: 120px 5%; background: var(--bg); border-top: 1px solid var(--border); }
     .contact-inner { max-width: 600px; margin: 0 auto; }
     .contact-inner .section-label { display: block; }
     .contact-heading { font-size: 28px; font-weight: 300; color: var(--text); margin-top: 16px; margin-bottom: 48px; line-height: 1.4; }
@@ -510,9 +628,10 @@
     @media (max-width: 1023px) {
       .hero-copy { font-size: 42px; }
       .services-grid { grid-template-columns: 1fr 1fr; }
-      .evidence-inner { grid-template-columns: repeat(2, 1fr); }
+      .results-metrics { grid-template-columns: repeat(2, 1fr); }
       .system-talk-block { grid-template-columns: 1fr; gap: 40px; }
       .security-tools { grid-template-columns: 1fr; }
+      .team-cards { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 767px) {
       .nav-inner { padding: 14px 5%; }
@@ -523,23 +642,29 @@
       .hero-inner { grid-template-columns: 1fr; gap: 40px; }
       .hero-copy { font-size: 34px; }
       .hero-dashboard { padding: 18px; }
+      #results { padding: 72px 5% 56px; }
+      .results-metrics { grid-template-columns: repeat(2, 1fr); }
+      .result-cell { border-right: none; border-bottom: 1px solid var(--border); }
+      .result-number { font-size: 28px; }
+      .comparison-table { font-size: 13px; }
+      .comparison-table thead th, .comparison-table tbody td { padding: 10px 12px; }
       #works { padding: 80px 5%; }
       .works-grid { grid-template-columns: 1fr; }
       .insta-inner { grid-template-columns: 1fr; gap: 32px; }
-      #evidence { padding: 56px 5%; }
-      .evidence-inner { grid-template-columns: repeat(2, 1fr); }
-      .evidence-cell { border-right: none; border-bottom: 1px solid var(--border); }
-      .evidence-cell:nth-child(even) { }
-      .evidence-number { font-size: 26px; }
       #system { padding: 80px 5%; }
       .system-talk-heading { font-size: 30px; }
+      .team-cards { grid-template-columns: 1fr; }
       #services { padding: 80px 5%; }
       .services-grid { grid-template-columns: 1fr; }
       #process { padding: 80px 5%; }
+      #faq { padding: 80px 5%; }
       #about { padding: 80px 5%; }
+      #security { padding: 64px 5%; }
       #contact { padding: 80px 5%; }
       .contact-heading { font-size: 22px; }
       .footer-inner { flex-direction: column; text-align: center; }
+      .mid-cta-section { padding: 40px 5%; }
+      .mid-cta-text { font-size: 17px; }
     }
   </style>
 </head>
@@ -550,7 +675,8 @@
       <span class="nav-logo">INIYOSHI AI WORKS</span>
       <ul class="nav-links">
         <li><a href="#works">Works</a></li>
-        <li><a href="#system">System</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -563,9 +689,9 @@
       <div class="hero-inner">
         <div class="hero-left">
           <p class="hero-label">AI Production Studio</p>
-          <h1 class="hero-copy">LP制作も<br>Instagram運用も、<br><strong>AIが自動で回す。</strong></h1>
-          <p class="hero-sub">20以上のAIエージェントが設計から納品まで動く。<br>あなたは話すだけ。専門知識もプロンプトも不要。</p>
-          <a href="#contact" class="hero-cta">無料相談を予約する &rarr;</a>
+          <h1 class="hero-copy">投稿作業60分→5分。<br>あなたの集客を、<br><strong>AIチームがまるごと回す。</strong></h1>
+          <p class="hero-sub">Instagram自動運用からLP制作まで。20以上のAIエージェントが、あなたの代わりに毎日動きます。話すだけ。専門知識もプロンプトも不要です。</p>
+          <a href="#contact" class="hero-cta">無料で相談する（30分）&rarr;</a>
         </div>
         <div class="hero-right">
           <div class="hero-dashboard" id="heroDashboard">
@@ -612,11 +738,254 @@
       </div>
     </section>
 
-    <!-- SEC-2: Works -->
+    <!-- SEC-2: Results & Numbers -->
+    <section id="results">
+      <div class="results-inner">
+        <span class="section-label">Results</span>
+        <h2 class="results-heading">あなたが得られる成果。</h2>
+
+        <div class="results-metrics">
+          <div class="result-cell">
+            <div class="result-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div class="result-number">60→5分</div>
+            <div class="result-desc">毎日のSNS投稿作業</div>
+            <div class="result-note">美容サロン様の導入事例</div>
+          </div>
+          <div class="result-cell">
+            <div class="result-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </div>
+            <div class="result-number">月12件</div>
+            <div class="result-desc">Instagram経由の新規来店</div>
+            <div class="result-note">美容サロン様の実績</div>
+          </div>
+          <div class="result-cell">
+            <div class="result-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
+              </svg>
+            </div>
+            <div class="result-number">3.8%</div>
+            <div class="result-desc">エンゲージメント率</div>
+            <div class="result-note">業界平均の約2倍</div>
+          </div>
+          <div class="result-cell">
+            <div class="result-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <div class="result-number">最短1週間</div>
+            <div class="result-desc">LP公開までの期間</div>
+            <div class="result-note">ヒアリングから納品まで</div>
+          </div>
+        </div>
+
+        <div class="comparison-wrap">
+          <h3 class="comparison-title">一般的な制作会社との比較</h3>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>一般的な制作会社</th>
+                <th>INIYOSHI AI WORKS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>LP制作</td>
+                <td>30〜100万円 / 1〜3ヶ月</td>
+                <td>10万円〜 / 最短1週間</td>
+              </tr>
+              <tr>
+                <td>SNS運用代行</td>
+                <td>月額 20〜50万円</td>
+                <td>月額 3万円〜</td>
+              </tr>
+              <tr>
+                <td>修正対応</td>
+                <td>別途見積もり / 数日〜</td>
+                <td>即日AIが対応</td>
+              </tr>
+              <tr>
+                <td>あなたの作業</td>
+                <td>資料準備・ディレクション</td>
+                <td>話すだけ（30分ヒアリング）</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="comparison-note">AIがチーム全体の人件費を大幅に削減しているため、この価格帯で提供できます。品質は4軸AIレビュー＋人間チェックで担保。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mid CTA 1 -->
+    <div class="mid-cta-section">
+      <p class="mid-cta-text">この成果を、あなたのビジネスでも。</p>
+      <a href="#contact" class="mid-cta-btn">無料で相談する（30分）&rarr;</a>
+      <p class="mid-cta-sub">専門知識不要。あなたの課題を聞かせてください。</p>
+    </div>
+
+    <!-- SEC-3: AI Team -->
+    <section id="system">
+      <div class="system-inner">
+        <span class="section-label">AI Team</span>
+
+        <!-- "話すだけでOK" block -->
+        <div class="system-talk-block">
+          <div class="system-talk-left">
+            <h2 class="system-talk-heading">あなたは話すだけ。<br><strong>AIチームが全部動く。</strong></h2>
+            <p class="system-talk-body">あなたがやりたいことを、自分の言葉で伝えるだけ。プロンプトの書き方も、AIの知識も必要ありません。こちらから必要なことを聞くので、答えていくだけで8チームが動き始めます。</p>
+            <p class="system-talk-note">「どんな投稿がいい？」「どんなお客さんに来てほしい？」そんな質問に答えていくうちに、設計から納品まで全部終わっています。</p>
+          </div>
+          <div class="system-talk-right">
+            <div class="system-prompt-mock">
+              <div class="prompt-mock-header">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                司令AI に送信
+              </div>
+              <div class="prompt-user-bubble">
+                「インスタの投稿を自動化したい。美容サロンなんだけど毎日投稿するのが大変で…」
+              </div>
+              <div class="prompt-arrow-row">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                <span>20以上のエージェントが自動分担</span>
+              </div>
+              <div class="prompt-agents-row">
+                <span class="prompt-agent-chip">trend_agent</span>
+                <span class="prompt-agent-chip">caption_agent</span>
+                <span class="prompt-agent-chip">image_agent</span>
+                <span class="prompt-agent-chip">post_agent</span>
+                <span class="prompt-agent-chip">review_agent</span>
+                <span class="prompt-agent-chip">night_batch</span>
+              </div>
+              <div class="prompt-result">&#10003; 毎日 09:00 自動投稿 &mdash; セットアップ完了</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team personality cards -->
+        <h3 class="section-h2">あなたを支える4つのチーム</h3>
+        <div class="team-cards">
+          <div class="team-card">
+            <svg class="team-card-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+            </svg>
+            <div class="team-card-name">ツバキ</div>
+            <div class="team-card-role">司令AI</div>
+            <div class="team-card-desc">あなたの窓口。話を聞いて、最適なチームに指示を出します。何でも自分の言葉で伝えるだけでOK。</div>
+          </div>
+          <div class="team-card">
+            <svg class="team-card-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            <div class="team-card-name">部長</div>
+            <div class="team-card-role">統括AI</div>
+            <div class="team-card-desc">全プロジェクトの品質管理。あなたに届く前に、4軸レビューで品質を保証します。</div>
+          </div>
+          <div class="team-card">
+            <svg class="team-card-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+            <div class="team-card-name">SNSチーム</div>
+            <div class="team-card-role">6 agents</div>
+            <div class="team-card-desc">トレンド取得→投稿文→画像→予約投稿を毎日自動で。あなたのSNSを止めません。</div>
+          </div>
+          <div class="team-card">
+            <svg class="team-card-icon" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+            </svg>
+            <div class="team-card-name">制作チーム</div>
+            <div class="team-card-role">8 agents</div>
+            <div class="team-card-desc">LP/Webサイトの設計→実装→レビュー→公開を一気通貫で。あなたの確認は最小限。</div>
+          </div>
+        </div>
+
+        <!-- Flowchart -->
+        <p class="system-diagram-label">チーム構成図</p>
+        <div class="system-svg-wrap">
+          <svg viewBox="0 0 720 310" xmlns="http://www.w3.org/2000/svg" aria-label="INIYOSHI AI WORKS チーム構成図">
+            <defs>
+              <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="rgba(74,222,128,0.5)"/></marker>
+              <marker id="arr2" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#2e2e42"/></marker>
+            </defs>
+            <rect x="280" y="8" width="160" height="48" rx="7" fill="#1c1c2c" stroke="rgba(74,222,128,0.5)" stroke-width="1.2"/>
+            <text x="360" y="30" font-family="IBM Plex Mono,monospace" font-size="12" fill="#f2f2f6" text-anchor="middle">INIYOSHI</text>
+            <text x="360" y="47" font-family="IBM Plex Mono,monospace" font-size="9" fill="#b4b4c8" text-anchor="middle">direction</text>
+            <line x1="360" y1="56" x2="360" y2="86" stroke="rgba(74,222,128,0.45)" stroke-width="1.2" marker-end="url(#arr)"/>
+            <rect x="280" y="90" width="160" height="48" rx="7" fill="#1c1c2c" stroke="#2e2e42" stroke-width="1"/>
+            <text x="360" y="112" font-family="IBM Plex Mono,monospace" font-size="12" fill="#f2f2f6" text-anchor="middle">司令AI</text>
+            <text x="360" y="129" font-family="IBM Plex Mono,monospace" font-size="9" fill="#b4b4c8" text-anchor="middle">dispatch</text>
+            <line x1="360" y1="138" x2="360" y2="168" stroke="rgba(74,222,128,0.32)" stroke-width="1.2" marker-end="url(#arr)"/>
+            <rect x="280" y="172" width="160" height="48" rx="7" fill="#1c1c2c" stroke="#2e2e42" stroke-width="1"/>
+            <text x="360" y="194" font-family="IBM Plex Mono,monospace" font-size="12" fill="#f2f2f6" text-anchor="middle">統括AI</text>
+            <text x="360" y="211" font-family="IBM Plex Mono,monospace" font-size="9" fill="#b4b4c8" text-anchor="middle">execution</text>
+            <line x1="360" y1="220" x2="360" y2="248" stroke="#2e2e42" stroke-width="1"/>
+            <line x1="76" y1="248" x2="644" y2="248" stroke="#2e2e42" stroke-width="1"/>
+            <line x1="76" y1="248" x2="76" y2="265" stroke="#2e2e42" stroke-width="1" marker-end="url(#arr2)"/>
+            <line x1="244" y1="248" x2="244" y2="265" stroke="#2e2e42" stroke-width="1" marker-end="url(#arr2)"/>
+            <line x1="476" y1="248" x2="476" y2="265" stroke="#2e2e42" stroke-width="1" marker-end="url(#arr2)"/>
+            <line x1="644" y1="248" x2="644" y2="265" stroke="#2e2e42" stroke-width="1" marker-end="url(#arr2)"/>
+            <rect x="16" y="265" width="120" height="38" rx="6" fill="#1c1c2c" stroke="#2e2e42" stroke-width="1"/>
+            <text x="76" y="281" font-family="IBM Plex Mono,monospace" font-size="10" fill="#f2f2f6" text-anchor="middle">SNS Team</text>
+            <text x="76" y="295" font-family="IBM Plex Mono,monospace" font-size="8" fill="#b4b4c8" text-anchor="middle">trend → post</text>
+            <rect x="184" y="265" width="120" height="38" rx="6" fill="#1c1c2c" stroke="#2e2e42" stroke-width="1"/>
+            <text x="244" y="281" font-family="IBM Plex Mono,monospace" font-size="10" fill="#f2f2f6" text-anchor="middle">制作 Team</text>
+            <text x="244" y="295" font-family="IBM Plex Mono,monospace" font-size="8" fill="#b4b4c8" text-anchor="middle">design → deploy</text>
+            <rect x="416" y="265" width="120" height="38" rx="6" fill="#1c1c2c" stroke="#2e2e42" stroke-width="1"/>
+            <text x="476" y="281" font-family="IBM Plex Mono,monospace" font-size="10" fill="#f2f2f6" text-anchor="middle">夜間 Batch</text>
+            <text x="476" y="295" font-family="IBM Plex Mono,monospace" font-size="8" fill="#b4b4c8" text-anchor="middle">2:00 AM daily</text>
+            <rect x="584" y="265" width="120" height="38" rx="6" fill="#1c1c2c" stroke="rgba(74,222,128,0.35)" stroke-width="1"/>
+            <text x="644" y="281" font-family="IBM Plex Mono,monospace" font-size="10" fill="#f2f2f6" text-anchor="middle">QC</text>
+            <text x="644" y="295" font-family="IBM Plex Mono,monospace" font-size="8" fill="#b4b4c8" text-anchor="middle">4-axis review</text>
+          </svg>
+        </div>
+
+        <!-- Agent grid -->
+        <div class="agent-grid-wrap">
+          <div class="agent-grid-heading">稼働中のAIエージェント（20+）</div>
+          <div class="agent-grid">
+            <span class="agent-chip highlight">tsubaki（司令AI）</span>
+            <span class="agent-chip highlight">buchou（統括AI）</span>
+            <span class="agent-chip">trend_agent</span>
+            <span class="agent-chip">caption_agent</span>
+            <span class="agent-chip">image_agent</span>
+            <span class="agent-chip">post_agent</span>
+            <span class="agent-chip">sns_agent</span>
+            <span class="agent-chip">design_agent</span>
+            <span class="agent-chip">build_agent</span>
+            <span class="agent-chip">lp_agent</span>
+            <span class="agent-chip">lp_design_agent</span>
+            <span class="agent-chip">lp_build_agent</span>
+            <span class="agent-chip">screenshot_agent</span>
+            <span class="agent-chip">deploy_agent</span>
+            <span class="agent-chip">hp_agent</span>
+            <span class="agent-chip">code_check</span>
+            <span class="agent-chip">review_agent</span>
+            <span class="agent-chip">feedback_agent</span>
+            <span class="agent-chip">research_agent</span>
+            <span class="agent-chip">news_agent</span>
+            <span class="agent-chip">instagram_research_agent</span>
+            <span class="agent-chip">target_agent</span>
+            <span class="agent-chip">ui_research_agent</span>
+          </div>
+        </div>
+
+        <p class="system-note">このHP自体が、このシステムで設計・実装・レビュー・デプロイされました。<br>使用モデル: Claude Opus 4.6（構成）/ Claude Sonnet 4.6（実装）</p>
+      </div>
+    </section>
+
+    <!-- SEC-4: Works -->
     <section id="works">
       <div class="works-inner">
         <span class="section-label">Works</span>
-        <h2 class="works-heading">AIが作った、実際に動くLP。</h2>
+        <h2 class="works-heading">あなたの業種でも、このクオリティ。</h2>
         <div class="works-grid">
 
           <!-- Card 1: Beauty Salon -->
@@ -762,7 +1131,7 @@
                 <circle cx="330" cy="72"  r="11" fill="rgba(255,45,120,0.12)"/>
                 <!-- badge -->
                 <rect x="130" y="16" width="100" height="18" rx="9" fill="rgba(245,160,0,0.15)" stroke="rgba(245,160,0,0.6)" stroke-width="1"/>
-                <text x="180" y="28.5" font-family="'Noto Sans JP', sans-serif" font-size="8" fill="#c88000" text-anchor="middle" letter-spacing="1.5">🎯 大阪最大級エンタメ施設</text>
+                <text x="180" y="28.5" font-family="'Noto Sans JP', sans-serif" font-size="8" fill="#c88000" text-anchor="middle" letter-spacing="1.5">&#127919; 大阪最大級エンタメ施設</text>
                 <!-- title line 1 -->
                 <text x="180" y="98" font-family="'Fredoka One', 'Arial Rounded MT Bold', Arial, sans-serif" font-size="48" fill="url(#plGr1)" text-anchor="middle" font-weight="700" letter-spacing="1">PLAYLAND</text>
                 <!-- title line 2 -->
@@ -893,170 +1262,11 @@
       </div>
     </section>
 
-    <!-- SEC-3: Evidence Strip -->
-    <section id="evidence">
-      <div class="evidence-inner">
-
-        <div class="evidence-cell">
-          <div class="evidence-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
-            </svg>
-          </div>
-          <div class="evidence-number">20+</div>
-          <div class="evidence-desc">稼働中のAIエージェント</div>
-        </div>
-
-        <div class="evidence-cell">
-          <div class="evidence-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
-            </svg>
-          </div>
-          <div class="evidence-number">8 Teams</div>
-          <div class="evidence-desc">SNS・制作・LP・リサーチ他</div>
-        </div>
-
-        <div class="evidence-cell">
-          <div class="evidence-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-            </svg>
-          </div>
-          <div class="evidence-number">毎日3回+</div>
-          <div class="evidence-desc">2:00AM夜間 / 6:10AM朝報<br>随時: ニュース・GitHubスカウト</div>
-        </div>
-
-        <div class="evidence-cell">
-          <div class="evidence-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
-            </svg>
-          </div>
-          <div class="evidence-number">毎日投稿</div>
-          <div class="evidence-desc">Instagram完全自動運用</div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- SEC-4: System -->
-    <section id="system">
-      <div class="system-inner">
-        <span class="section-label">System</span>
-
-        <!-- "話すだけでOK" block -->
-        <div class="system-talk-block">
-          <div class="system-talk-left">
-            <h2 class="system-talk-heading">話すだけで、<br><strong>AIが動く。</strong></h2>
-            <p class="system-talk-body">司令AIにやりたいことを自分の言葉で伝えるだけ。プロンプトの書き方も、AIの知識も必要ありません。こちらから必要なことを聞くので、答えていくだけで8チームが動き始めます。</p>
-            <p class="system-talk-note">「どんな投稿がいい？」「どんなお客さんに来てほしい？」そんな質問に答えていくうちに、設計から納品まで全部終わっています。</p>
-          </div>
-          <div class="system-talk-right">
-            <div class="system-prompt-mock">
-              <div class="prompt-mock-header">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-                司令AI に送信
-              </div>
-              <div class="prompt-user-bubble">
-                「インスタの投稿を自動化したい。美容サロンなんだけど毎日投稿するのが大変で…」
-              </div>
-              <div class="prompt-arrow-row">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-                <span>20以上のエージェントが自動分担</span>
-              </div>
-              <div class="prompt-agents-row">
-                <span class="prompt-agent-chip">trend_agent</span>
-                <span class="prompt-agent-chip">caption_agent</span>
-                <span class="prompt-agent-chip">image_agent</span>
-                <span class="prompt-agent-chip">post_agent</span>
-                <span class="prompt-agent-chip">review_agent</span>
-                <span class="prompt-agent-chip">night_batch</span>
-              </div>
-              <div class="prompt-result">✓ 毎日 09:00 自動投稿 — セットアップ完了</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Flowchart -->
-        <p class="system-diagram-label">チーム構成図</p>
-        <div class="system-svg-wrap">
-          <svg viewBox="0 0 720 310" xmlns="http://www.w3.org/2000/svg" aria-label="INIYOSHI AI WORKS チーム構成図">
-            <defs>
-              <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="rgba(74,222,128,0.5)"/></marker>
-              <marker id="arr2" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L0,6 L6,3 z" fill="#2e2e42"/></marker>
-            </defs>
-            <rect x="280" y="8" width="160" height="48" rx="7" fill="#1c1c2c" stroke="rgba(74,222,128,0.5)" stroke-width="1.2"/>
-            <text x="360" y="30" font-family="IBM Plex Mono,monospace" font-size="12" fill="#f2f2f6" text-anchor="middle">INIYOSHI</text>
-            <text x="360" y="47" font-family="IBM Plex Mono,monospace" font-size="9" fill="#b4b4c8" text-anchor="middle">direction</text>
-            <line x1="360" y1="56" x2="360" y2="86" stroke="rgba(74,222,128,0.45)" stroke-width="1.2" marker-end="url(#arr)"/>
-            <rect x="280" y="90" width="160" height="48" rx="7" fill="#1c1c2c" stroke="#2e2e42" stroke-width="1"/>
-            <text x="360" y="112" font-family="IBM Plex Mono,monospace" font-size="12" fill="#f2f2f6" text-anchor="middle">司令AI</text>
-            <text x="360" y="129" font-family="IBM Plex Mono,monospace" font-size="9" fill="#b4b4c8" text-anchor="middle">dispatch</text>
-            <line x1="360" y1="138" x2="360" y2="168" stroke="rgba(74,222,128,0.32)" stroke-width="1.2" marker-end="url(#arr)"/>
-            <rect x="280" y="172" width="160" height="48" rx="7" fill="#1c1c2c" stroke="#2e2e42" stroke-width="1"/>
-            <text x="360" y="194" font-family="IBM Plex Mono,monospace" font-size="12" fill="#f2f2f6" text-anchor="middle">統括AI</text>
-            <text x="360" y="211" font-family="IBM Plex Mono,monospace" font-size="9" fill="#b4b4c8" text-anchor="middle">execution</text>
-            <line x1="360" y1="220" x2="360" y2="248" stroke="#2e2e42" stroke-width="1"/>
-            <line x1="76" y1="248" x2="644" y2="248" stroke="#2e2e42" stroke-width="1"/>
-            <line x1="76" y1="248" x2="76" y2="265" stroke="#2e2e42" stroke-width="1" marker-end="url(#arr2)"/>
-            <line x1="244" y1="248" x2="244" y2="265" stroke="#2e2e42" stroke-width="1" marker-end="url(#arr2)"/>
-            <line x1="476" y1="248" x2="476" y2="265" stroke="#2e2e42" stroke-width="1" marker-end="url(#arr2)"/>
-            <line x1="644" y1="248" x2="644" y2="265" stroke="#2e2e42" stroke-width="1" marker-end="url(#arr2)"/>
-            <rect x="16" y="265" width="120" height="38" rx="6" fill="#1c1c2c" stroke="#2e2e42" stroke-width="1"/>
-            <text x="76" y="281" font-family="IBM Plex Mono,monospace" font-size="10" fill="#f2f2f6" text-anchor="middle">SNS Team</text>
-            <text x="76" y="295" font-family="IBM Plex Mono,monospace" font-size="8" fill="#b4b4c8" text-anchor="middle">trend → post</text>
-            <rect x="184" y="265" width="120" height="38" rx="6" fill="#1c1c2c" stroke="#2e2e42" stroke-width="1"/>
-            <text x="244" y="281" font-family="IBM Plex Mono,monospace" font-size="10" fill="#f2f2f6" text-anchor="middle">制作 Team</text>
-            <text x="244" y="295" font-family="IBM Plex Mono,monospace" font-size="8" fill="#b4b4c8" text-anchor="middle">design → deploy</text>
-            <rect x="416" y="265" width="120" height="38" rx="6" fill="#1c1c2c" stroke="#2e2e42" stroke-width="1"/>
-            <text x="476" y="281" font-family="IBM Plex Mono,monospace" font-size="10" fill="#f2f2f6" text-anchor="middle">夜間 Batch</text>
-            <text x="476" y="295" font-family="IBM Plex Mono,monospace" font-size="8" fill="#b4b4c8" text-anchor="middle">2:00 AM daily</text>
-            <rect x="584" y="265" width="120" height="38" rx="6" fill="#1c1c2c" stroke="rgba(74,222,128,0.35)" stroke-width="1"/>
-            <text x="644" y="281" font-family="IBM Plex Mono,monospace" font-size="10" fill="#f2f2f6" text-anchor="middle">QC</text>
-            <text x="644" y="295" font-family="IBM Plex Mono,monospace" font-size="8" fill="#b4b4c8" text-anchor="middle">4-axis review</text>
-          </svg>
-        </div>
-
-        <!-- Agent grid -->
-        <div class="agent-grid-wrap">
-          <div class="agent-grid-heading">稼働中のAIエージェント（20+）</div>
-          <div class="agent-grid">
-            <span class="agent-chip highlight">tsubaki（司令AI）</span>
-            <span class="agent-chip highlight">buchou（統括AI）</span>
-            <span class="agent-chip">trend_agent</span>
-            <span class="agent-chip">caption_agent</span>
-            <span class="agent-chip">image_agent</span>
-            <span class="agent-chip">post_agent</span>
-            <span class="agent-chip">sns_agent</span>
-            <span class="agent-chip">design_agent</span>
-            <span class="agent-chip">build_agent</span>
-            <span class="agent-chip">lp_agent</span>
-            <span class="agent-chip">lp_design_agent</span>
-            <span class="agent-chip">lp_build_agent</span>
-            <span class="agent-chip">screenshot_agent</span>
-            <span class="agent-chip">deploy_agent</span>
-            <span class="agent-chip">hp_agent</span>
-            <span class="agent-chip">code_check</span>
-            <span class="agent-chip">review_agent</span>
-            <span class="agent-chip">feedback_agent</span>
-            <span class="agent-chip">research_agent</span>
-            <span class="agent-chip">news_agent</span>
-            <span class="agent-chip">instagram_research_agent</span>
-            <span class="agent-chip">target_agent</span>
-            <span class="agent-chip">ui_research_agent</span>
-          </div>
-        </div>
-
-        <p class="system-note">このHP自体が、このシステムで設計・実装・レビュー・デプロイされました。<br>使用モデル: Claude Opus 4.6（構成）/ Claude Sonnet 4.6（実装）</p>
-      </div>
-    </section>
-
-    <!-- SEC-5: Services + Security -->
+    <!-- SEC-5: Services -->
     <section id="services">
       <div class="services-inner">
         <span class="section-label">Services</span>
-        <h2 class="section-h2">3つの入口から始められる。</h2>
+        <h2 class="section-h2">あなたに合った入口を選ぶだけ。</h2>
 
         <div class="services-grid">
 
@@ -1067,12 +1277,13 @@
                 <path d="M21 12a9 9 0 11-6.219-8.56"/><polyline points="21 3 21 8 16 8"/>
               </svg>
               <div class="service-title">AI業務自動化</div>
-              <div class="service-price">目安: 月額 3万円〜</div>
+              <div class="service-price">月額 3万円〜</div>
+              <div class="service-price-note">初期設定費込み・1ヶ月単位で解約可</div>
             </div>
             <div class="service-card-body">
-              <div class="service-desc">Instagram投稿の自動運用、問い合わせ対応の仕組み化、定型業務のエージェント化。繰り返し作業をゼロにする。</div>
+              <div class="service-desc">あなたのInstagram投稿、問い合わせ対応、日報などの定型業務をAIが自動化。毎日の「やらなきゃ」をゼロにします。</div>
               <div class="service-tags">
-                <span class="service-tag">Instagram</span>
+                <span class="service-tag">Instagram自動運用</span>
                 <span class="service-tag">LINE自動応答</span>
                 <span class="service-tag">レポート自動化</span>
               </div>
@@ -1086,10 +1297,11 @@
                 <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="2" y1="9" x2="22" y2="9"/><path d="M7 21h10M12 17v4"/>
               </svg>
               <div class="service-title">Web制作</div>
-              <div class="service-price">目安: 10万円〜</div>
+              <div class="service-price">10万円〜（LP 1ページ）</div>
+              <div class="service-price-note">レスポンシブ対応・SEO基本設計・公開費込み</div>
             </div>
             <div class="service-card-body">
-              <div class="service-desc">ランディングページ、コーポレートサイト。レスポンシブ対応、SEO基本設計込み。Netlify + GitHubでの公開・運用。</div>
+              <div class="service-desc">あなたのビジネスに合わせたLP・コーポレートサイトを制作。最短1週間で公開。修正もAIが即日対応します。</div>
               <div class="service-tags">
                 <span class="service-tag">LP</span>
                 <span class="service-tag">コーポレート</span>
@@ -1107,13 +1319,14 @@
                 <line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/>
               </svg>
               <div class="service-title">AI導入設計</div>
-              <div class="service-price">ヒアリング無料 &rarr; 見積もり</div>
+              <div class="service-price">ヒアリング無料 → お見積もり</div>
+              <div class="service-price-note">「何から始めればいいか分からない」方向け</div>
             </div>
             <div class="service-card-body">
               <div class="service-qa">
                 <div class="service-qa-item">
                   <div class="service-qa-q">Q. 自分の仕事のどこに使えるの？</div>
-                  <div class="service-qa-a">業務フローを一緒に見て、「ここが自動化できる」をAIが具体的に洗い出します。</div>
+                  <div class="service-qa-a">あなたの業務フローを一緒に見て、「ここが自動化できる」をAIが具体的に洗い出します。</div>
                 </div>
                 <div class="service-qa-item">
                   <div class="service-qa-q">Q. 品質は大丈夫？</div>
@@ -1128,45 +1341,29 @@
           </div>
 
         </div>
-
-        <div class="security-block">
-          <h3 class="security-heading">セキュリティ体制</h3>
-          <div class="security-content">
-            <p class="security-intro">納品物は全て、3段階のセキュリティスキャンをパスした状態で納品します。</p>
-            <div class="security-tools">
-              <div class="security-tool-card">
-                <div class="security-tool-name">CodeQL</div>
-                <div class="security-tool-desc">コード脆弱性の自動検出。push毎に実行。</div>
-              </div>
-              <div class="security-tool-card">
-                <div class="security-tool-name">OWASP ZAP</div>
-                <div class="security-tool-desc">Webアプリの脆弱性テスト。デプロイ前に実行。</div>
-              </div>
-              <div class="security-tool-card">
-                <div class="security-tool-name">Semgrep</div>
-                <div class="security-tool-desc">静的解析。機密情報の混入チェック。</div>
-              </div>
-            </div>
-            <p class="security-foot">AIレビューに加え、人間の目でコードを確認。お客様のデータは外部に出さない設計。NDA対応可能。</p>
-          </div>
-        </div>
-
       </div>
     </section>
+
+    <!-- Mid CTA 2 -->
+    <div class="mid-cta-section">
+      <p class="mid-cta-text">どのサービスが合うか分からなくても大丈夫。</p>
+      <a href="#contact" class="mid-cta-btn">まずは無料で相談する &rarr;</a>
+      <p class="mid-cta-sub">30分のヒアリングで、あなたに最適なプランをご提案します。</p>
+    </div>
 
     <!-- SEC-6: Process -->
     <section id="process">
       <div class="process-inner">
         <span class="section-label">Process</span>
-        <h2 class="section-h2">4ステップ。<br>最短1週間で動く。</h2>
+        <h2 class="section-h2">あなたがやることは4つだけ。<br>最短1週間で動き出します。</h2>
         <div class="process-list">
           <div class="process-step">
             <div class="process-step-icon">
               <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
             </div>
             <div>
-              <div class="process-title">ヒアリング</div>
-              <div class="process-desc">課題と目標を整理する。30分、無料。専門知識不要。自分の言葉で話すだけ。</div>
+              <div class="process-title">あなたの課題を話す</div>
+              <div class="process-desc">30分の無料ヒアリング。専門知識不要。「投稿が面倒」「サイトが欲しい」——そんな一言で十分です。</div>
             </div>
           </div>
           <div class="process-step">
@@ -1174,8 +1371,8 @@
               <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
             </div>
             <div>
-              <div class="process-title">提案</div>
-              <div class="process-desc">対応範囲・費用・スケジュールをまとめる。納得してから進む。</div>
+              <div class="process-title">提案を確認する</div>
+              <div class="process-desc">対応範囲・費用・スケジュールをまとめてお伝えします。納得してから進むので安心です。</div>
             </div>
           </div>
           <div class="process-step">
@@ -1183,8 +1380,8 @@
               <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </div>
             <div>
-              <div class="process-title">実装</div>
-              <div class="process-desc">AIチームが制作・開発を実行。進捗はリアルタイムで共有する。あなたの作業は最小限。</div>
+              <div class="process-title">AIチームが動く</div>
+              <div class="process-desc">制作・開発をAIチームが実行。進捗はリアルタイムで共有。あなたの作業は最小限です。</div>
             </div>
           </div>
           <div class="process-step">
@@ -1192,15 +1389,66 @@
               <svg viewBox="0 0 24 24"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><line x1="12" y1="22" x2="12" y2="7"/></svg>
             </div>
             <div>
-              <div class="process-title">納品・継続対応</div>
-              <div class="process-desc">公開・運用開始。必要なら保守・改善を継続サポート。</div>
+              <div class="process-title">納品・あなたのビジネスが動き出す</div>
+              <div class="process-desc">公開・運用開始。必要なら保守・改善も継続サポートします。</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SEC-7: About -->
+    <!-- SEC-7: FAQ -->
+    <section id="faq">
+      <div class="faq-inner">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-h2">よくあるご質問</h2>
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-q-mark">Q.</span>
+              <span>AIの知識がなくても本当に使えますか？</span>
+            </div>
+            <div class="faq-answer">はい。こちらから質問しますので、あなたはそれに答えるだけです。プロンプトの書き方やAIの仕組みを覚える必要は一切ありません。「インスタの投稿を自動化したい」——それだけで十分です。</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-q-mark">Q.</span>
+              <span>AIが作ったものの品質は大丈夫ですか？</span>
+            </div>
+            <div class="faq-answer">全成果物は4軸のAIレビュー（デザイン・コード・SEO・セキュリティ）と人間チェックを通過してから納品します。Worksセクションのデモサイトが実際の品質です。修正も即日対応します。</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-q-mark">Q.</span>
+              <span>途中で追加料金がかかることはありますか？</span>
+            </div>
+            <div class="faq-answer">ヒアリング時に対応範囲と費用を決めます。あなたが了承した範囲を超えて勝手に請求が増えることはありません。追加のご要望が出た場合は、都度お見積もりしてから進めます。</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-q-mark">Q.</span>
+              <span>データや情報の扱いは安全ですか？</span>
+            </div>
+            <div class="faq-answer">NDA（秘密保持契約）に対応しています。あなたのデータは外部サーバーに保存しない設計です。納品物はCodeQL・OWASP ZAP・Semgrepの3段階セキュリティスキャンを通過します。</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span class="faq-q-mark">Q.</span>
+              <span>小さい案件でも頼めますか？</span>
+            </div>
+            <div class="faq-answer">はい。Instagram運用のご相談1件から、LPの1ページ制作まで、規模に関わらずお受けしています。まずは無料ヒアリング（30分）でお気軽にご相談ください。</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SEC-8: About -->
     <section id="about">
       <div class="about-inner">
         <span class="section-label">About</span>
@@ -1209,29 +1457,54 @@
         <div class="about-bio">
           <p>コードは読めない。書いたこともない。<br>構造を見て、方向を決めて、AIチームに任せる。それだけ。</p>
           <p>このHP、美容サロンのLP、毎日のInstagram投稿、<br>全部その方法で作っている。</p>
-          <p>クライアントにもAIの勉強はさせない。<br>使うだけでいい状態を作る。それが設計思想。</p>
+          <p>あなたにもAIの勉強はさせません。<br>使うだけでいい状態を作る。それが設計思想です。</p>
         </div>
         <p class="about-stack">AIチームが使う技術: Claude Code / Playwright / Instagram Graph API / Netlify / GitHub</p>
       </div>
     </section>
 
-    <!-- SEC-8: Contact -->
+    <!-- SEC-9: Security -->
+    <section id="security">
+      <div class="security-inner">
+        <span class="section-label">Security</span>
+        <h2 class="security-heading">あなたのデータを守る、3段階のセキュリティ。</h2>
+        <div class="security-content">
+          <p class="security-intro">納品物は全て、3段階のセキュリティスキャンをパスした状態でお届けします。</p>
+          <div class="security-tools">
+            <div class="security-tool-card">
+              <div class="security-tool-name">CodeQL</div>
+              <div class="security-tool-desc">コード脆弱性の自動検出。push毎に実行。</div>
+            </div>
+            <div class="security-tool-card">
+              <div class="security-tool-name">OWASP ZAP</div>
+              <div class="security-tool-desc">Webアプリの脆弱性テスト。デプロイ前に実行。</div>
+            </div>
+            <div class="security-tool-card">
+              <div class="security-tool-name">Semgrep</div>
+              <div class="security-tool-desc">静的解析。機密情報の混入チェック。</div>
+            </div>
+          </div>
+          <p class="security-foot">AIレビューに加え、人間の目でコードを確認。あなたのデータは外部に出さない設計。NDA対応可能。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEC-10: Contact -->
     <section id="contact">
       <div class="contact-inner">
         <span class="section-label">Contact</span>
-        <h2 class="contact-heading">仕事の話、聞かせてください。</h2>
+        <h2 class="contact-heading">あなたの課題、聞かせてください。<br>30分の無料ヒアリングから始めましょう。</h2>
         <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact">
           <div class="hidden-field"><input name="bot-field"></div>
           <input type="text" name="name" placeholder="お名前" required>
           <input type="email" name="email" placeholder="メールアドレス" required>
-          <textarea name="message" placeholder="ご相談内容（どんな業務を自動化したいか、どんなサイトが欲しいか、何でも）" rows="4" required></textarea>
-          <button type="submit" class="contact-submit">送信する</button>
+          <textarea name="message" placeholder="ご相談内容（「インスタ投稿を自動化したい」「LPが欲しい」など、何でもOKです）" rows="4" required></textarea>
+          <button type="submit" class="contact-submit">無料で相談する</button>
         </form>
         <div class="contact-alts">
           <a href="mailto:iniyoshi.ai.works@gmail.com" class="contact-alt-link">iniyoshi.ai.works@gmail.com &rarr;</a>
-          <a href="https://lin.ee/6ArK0h8" target="_blank" rel="noopener" class="contact-alt-link">LINE公式に追加する &rarr;</a>
-          <a href="#" class="contact-alt-link">X (@INIYOSHI) でDMする &rarr;</a>
+          <a href="https://lin.ee/6ArK0h8" target="_blank" rel="noopener" class="contact-alt-link">LINE公式で気軽に相談する &rarr;</a>
         </div>
         <p class="contact-response">24時間以内に返信します。</p>
       </div>
